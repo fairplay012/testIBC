@@ -279,10 +279,17 @@ footer{
         position: relative;
     }
     .header ul{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .header ul li{
+        width: auto;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin : 0;
     }
     .left-header{
         width: 100%;
@@ -348,6 +355,5 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
     }
 }
