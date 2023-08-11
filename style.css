@@ -1,0 +1,353 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ol, ul {
+    list-style: none;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    position: fixed;
+    top :0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 2px 2px #f5af00;
+}
+.left-header img{
+    width: 110px;
+    height: 100px;
+}
+.right-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-header ul {
+    display: flex;
+}
+.right-header ul li{
+    margin-right:30px ;
+}
+.right-header ul li a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    
+}
+.right-header ul li a:hover{
+    color: #f5af00;
+}
+.content-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-header img {
+    object-fit: cover;
+    width: 100%;
+}
+.banner{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    color: whitesmoke;
+}
+.banner p{
+    margin-top: 15px;
+}
+.content-header button{
+
+}
+.service-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:150px;
+}
+.service-top h1{
+    margin-bottom: 30px;
+}
+.service-list h2{
+    margin-bottom: 30px;
+}
+.service-list{
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.service-list div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-list div img{
+    width: 150px;
+    height: 150px;
+}
+.service-list div p{
+    line-height: 30px;
+}
+.feature-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.feature h1{
+    margin-bottom: 30px;
+}
+.feature{
+    background-color: whitesmoke;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.example-image{
+    /* width: 100%; */
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+    column-gap: 50px;
+    padding-bottom: 100px;
+}
+.example-image img{
+    width: 350px;
+    height: 300px;
+    transform: scale(1);
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.example-image img:hover{
+    transform: scale(1.1);
+}
+.introduction{
+    padding-top: 100px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin: 0 10%;
+    column-gap: 10%;
+}
+.left-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    margin: 0 10%;
+}
+.left-intro p{
+    color: #999999;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.progress-list{
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+}
+.progress-list span{
+    font-weight: bold;
+    font-size: 15px;
+}
+.progress-bar{
+    height: 100%;
+    width: 0;
+    background-color: #f5af00;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+.progress-title{
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    margin: 20px 0;
+    height: 10px;
+}
+.slogan{
+    height: 200px;
+    background-color: #f5af00;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.slogan button{
+    width: 100px;
+    height: 50px;
+    background-color: #f5af00;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.slogan button a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.slogan button:hover{
+    background-color: whitesmoke;
+}
+.slogan button a:hover{
+    color: #f5af00;
+}
+.slogan h1{
+    color: whitesmoke;
+}
+.contact{
+    height: 300px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-bottom: 1px solid #999999;
+}
+.contact img{
+    height: 70px;
+    width: 70px;
+    margin-bottom: 20px;
+}
+.contact p{
+    color: #999999;
+    margin-top: 10px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social-media img{
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .header {
+        display: block;
+        position: relative;
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-header{
+        display: block;
+        border-bottom: 1px solid grey;
+        padding-bottom: 30px;
+    }
+    .content-header img{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .banner{
+        position: relative;
+        color: black;
+    }
+    .service-list{
+        display: block;
+    }
+    .service-list div{
+        width: 100%;
+    }
+    .feature{
+        display: block;
+
+    }
+    .example-image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .example-image img{
+        margin-bottom: 20px;
+        width: 60%;
+    }
+    .introduction{
+        display: block;
+        padding-top: 10px;
+        height: auto;
+
+    }
+    .slogan{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    footer{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
